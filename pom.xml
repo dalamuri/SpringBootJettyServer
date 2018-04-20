@@ -6,6 +6,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>SpringBootJetty</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<packaging>jar</packaging>
 
 	<name>SpringBootJetty</name>
@@ -14,7 +15,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.1.RELEASE</version>
+		<version>1.4.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -25,25 +26,19 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		<exclusions>
-		<exclusion>
+		
+
+<dependency>
 		<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-tomcat</artifactId>
-		
-		</exclusion>
-		</exclusions>
-		
-		
-		
-		</dependency>
-		
-		<dependency>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+
+	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-jetty</artifactId>
 	</dependency>
+
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
